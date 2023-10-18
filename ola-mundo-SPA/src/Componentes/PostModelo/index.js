@@ -1,8 +1,21 @@
+import { Children } from 'react'
 import styles from './PostModelo.module.css'
 
-const PostModelo = () => {
+const PostModelo = ({children, fotoCapa, titulo}) => {
     return (
-        'post'
+        <article className={styles.postModeloContainer}>
+            <div
+                className={styles.fotoCapa}
+                style={{backgroundImage: `url(${fotoCapa})`}}>
+            </div>
+            <h2 className={styles.titulo}>
+                {titulo}
+            </h2>
+            <div className={styles.postConteudoContainer}>
+                {children}
+            </div>
+
+        </article>
     )
 }
 
