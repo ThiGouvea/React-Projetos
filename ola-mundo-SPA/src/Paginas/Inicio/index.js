@@ -1,6 +1,12 @@
+import Banner from "Componentes/Banner";
+
 const Inicio = () => {
     return (
-        <h1>Olá Mundo</h1>
+        <mai>
+            <Banner />
+
+            <h1>Olá Mundo</h1>
+        </mai>
     )
 }
 
