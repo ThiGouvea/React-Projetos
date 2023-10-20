@@ -1,0 +1,3 @@
+  cd tailwindvite
+  npm install
+  npm run dev
